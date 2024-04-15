@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>DicomWebApi Upload Dicom files</title>
+</head>
+<body>
+<h1>Upload Dicom files to portal using DicomWebAPi</h1>
+  <input type="file" id="f" webkitdirectory mozdirectory />
+<p id="msg">Starting Upload</p>
+<p id="status">Status</p>
+<p id="uploadId">UploadId</p>
+<button onclick="getStatus()">Get Status</button>
+<p id="getStatus">Status</p>
+
+
+  <script src="uploadDicom.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>DicomWebApi Upload Dicom files</title>
+</head>
+<body>
+<h1>Upload Dicom files to portal using DicomWebAPi</h1>
+<label>Endpoint Url :</label><input type="text" id="endpoint" value="https://devapi.vidalung.ai/"/> </br></br>
+<label>Username :</label><input type="text" id="username" value="rajamanickam.r+600@skeintech.com"/> </br></br>
+<label>Password :</label><input type="password" id="password" value="Skein@123456"/> </br></br>
+
+<button onclick="getProjects()">Get Projects</button>  </br></br>
+<p id="projName">Project Name</p>
+<label>Org Id :</label><input type="text" id="orgId" value="12b108b9-189c-47bd-b2b5-948856b9a44e"/> </br></br>
+<label>Project Id :</label><input type="text" id="projId" value="8c80e31f-86c8-4634-9aba-c586a1df66cf"/> </br></br>
+
+
+
+
+  <input type="file" id="f" webkitdirectory mozdirectory />
+<p id="msg">Starting Upload</p>
+<p id="status">Status</p>
+<p id="uploadId">UploadId</p>
+<button onclick="getStatus()">Get Status</button>
+<p id="getStatus">Status</p>
+
+
+  <script src="UploadDicom.js"></script>
+</body>
+</html>
