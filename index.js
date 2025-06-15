@@ -82,11 +82,13 @@ function send(piece,fileCount,count,uploadId,filename) {
 function getStatus(){
 
 console.log("upload Id",_uploadId)
-
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var base64UP = btoa(username+":"+password);
   var xhr = new XMLHttpRequest();
   xhr.open('POST', 'https://9n7zdsqchk.execute-api.us-east-2.amazonaws.com/dev/4754c00f-29c8-45fc-8548-73ae929bc103/5b5246b2-cf3f-4cb5-9713-ebb8cce82530/stowrs/studies/uploadstatus', true);
   xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.setRequestHeader('Authorization', 'Basic '+btoa("lokesh.bhatt+20@gmail.com:dev@Portal123$") );
+  xhr.setRequestHeader('Authorization', 'Basic '+base64UP );
 const json = {"uploadId":_uploadId};
    xhr.send(JSON.stringify(json));
    xhr.onreadystatechange = () => {
@@ -111,9 +113,6 @@ function getProjects(){
     xhr.open('GET', endpoint+'/projects', true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.setRequestHeader('Authorization', 'Basic '+base64UP );
-    // xhr.open('GET', 'https://znoxv2atk6.execute-api.us-east-2.amazonaws.com/prod/projects', true);
-    //   xhr.setRequestHeader("Content-Type", "application/json");
-    //   xhr.setRequestHeader('Authorization', 'Basic '+btoa("lokesh.bhatt+1@gmail.com:@iurREsdsd34#$") );
    
      xhr.send();
      xhr.onreadystatechange = () => {
