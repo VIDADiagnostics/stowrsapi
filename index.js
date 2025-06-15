@@ -56,7 +56,6 @@ function send(piece,fileCount,count,uploadId,filename) {
   console.log("offset",offset);
   var formdata = new FormData();
   var xhr1 = new XMLHttpRequest();
-  // xhr1.open('POST', 'https://9n7zdsqchk.execute-api.us-east-2.amazonaws.com/dev/4754c00f-29c8-45fc-8548-73ae929bc103/5b5246b2-cf3f-4cb5-9713-ebb8cce82530/stowrs/studies', true);
   xhr1.open('POST', endpoint+'/'+projectId+'/'+orgId+'/stowrs/studies', true);
 
   xhr1.setRequestHeader('Authorization', 'Basic '+base64UP );
