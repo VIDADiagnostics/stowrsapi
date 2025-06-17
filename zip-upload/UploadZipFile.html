@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>DicomWebApi Upload Zip files</title>
+</head>
+<body>
+<h1>Upload Zip files to portal using DicomWebAPi</h1>
+<label>Endpoint Url :</label><input type="text" id="endpoint" placeholder="Please enter api url"/> </br></br>
+<label>Username :</label><input type="text" id="username" placeholder="Please enter username"/> </br></br>
+<label>Password :</label><input type="password" id="password" placeholder="Please enter password"/> </br></br>
+
+<button onclick="getProjects()">Get Projects</button>  </br></br>
+<p id="projName">Project Name</p>
+<label>Org Id :</label><input type="text" id="orgId" placeholder="Please enter the org id"/> </br></br>
+<label>Project Id :</label><input type="text" id="projId" placeholder="Please enter the project id"/> </br></br>
+
+
+
+
+  <input type="file" id="f" />
+<p id="msg">Starting Upload</p>
+<p id="status">Status</p>
+<p id="uploadId">UploadId</p>
+
+<button onclick="getStatus()">Get Status</button>
+<p id="getStatus">Status</p>
+
+
+
+  <script src="UploadZipFile.js"></script>
+  
+</body>
+</html>
