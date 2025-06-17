@@ -254,5 +254,4 @@ function getProjects(){
       }
     };
   }
-
- 
+}
